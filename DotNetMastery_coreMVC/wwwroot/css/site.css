@@ -20,3 +20,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.footer {
+    height: 50px; /* Set the height of your footer */
+    margin-top: -50px; /* Adjust this value to match the negative margin on the container */
+}
