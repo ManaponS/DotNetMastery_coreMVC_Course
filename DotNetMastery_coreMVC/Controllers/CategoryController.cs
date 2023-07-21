@@ -32,17 +32,19 @@ namespace DotNetMastery_Web.Controllers
             {
                 _db.Categories.Add(obj);
                 _db.SaveChanges();
+                TempData["success"] = "Successfully Create Category";
                 return RedirectToAction("Index");
             }
             return View(obj);
         }
-        public IActionResult Edit(int? id)
+
+        public IActionResult Edit(int? CategoryId)
         {
-            if (id == null || id == 0)
+            if (CategoryId == null || CategoryId == 0)
             {
                 return NotFound();
             }
-            Category? categoryFromDb = _db.Categories.Find(id);
+            Category? categoryFromDb = _db.Categories.Find(CategoryId);
             //Category? categoryFromDb1 = _db.Categories.FirstOrDefault(u=>u.Id==id);
             //Category? categoryFromDb2 = _db.Categories.Where(u=>u.Id==id).FirstOrDefault();
 
@@ -59,10 +61,39 @@ namespace DotNetMastery_Web.Controllers
             {
                 _db.Categories.Update(obj);
                 _db.SaveChanges();
+                TempData["success"] = "Successfully Update Category";
                 return RedirectToAction("Index");
             }
             return View();
+        }
 
+        public IActionResult Delete(int? CategoryId)
+        {
+            if (CategoryId == null || CategoryId == 0)
+            {
+                return NotFound();
+            }
+            Category? categoryFromDb = _db.Categories.Find(CategoryId);
+
+            if (categoryFromDb == null)
+            {
+                return NotFound();
+            }
+            return View(categoryFromDb);
+        }
+
+        [HttpPost,ActionName("Delete")]
+        public IActionResult DeletePost(int? CategoryId)
+        {
+            Category? obj = _db.Categories.Find(CategoryId);
+            if (obj == null)
+            {
+                return NotFound(); 
+            }
+            _db.Categories.Remove(obj);
+            _db.SaveChanges();
+            TempData["success"] = "Successfully Delete Category";
+            return RedirectToAction("Index");
         }
     }
 }
