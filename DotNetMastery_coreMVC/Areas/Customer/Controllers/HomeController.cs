@@ -2,8 +2,9 @@ using DotNetMastery.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace DotNetMastery_coreMVC.Controllers
+namespace DotNetMastery_Web.Areas.Customer.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

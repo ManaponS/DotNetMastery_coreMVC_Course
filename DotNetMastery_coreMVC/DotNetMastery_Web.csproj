@@ -21,4 +21,8 @@
     <ProjectReference Include="..\DotNetMastery.DataAccess\DotNetMastery.DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>
