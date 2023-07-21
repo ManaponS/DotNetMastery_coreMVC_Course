@@ -1,4 +1,4 @@
-using DotNetMastery_Web.Data;
+using DotNetMastery.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

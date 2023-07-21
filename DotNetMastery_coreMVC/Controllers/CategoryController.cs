@@ -1,5 +1,6 @@
-﻿using DotNetMastery_Web.Data;
-using DotNetMastery_Web.Models;
+﻿using DotNetMastery.DataAccess.Data;
+using DotNetMastery.Models;
+using DotNetMastery.DataAccess;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DotNetMastery_Web.Controllers

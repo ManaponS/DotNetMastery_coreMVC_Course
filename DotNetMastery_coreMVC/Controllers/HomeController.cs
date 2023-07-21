@@ -1,4 +1,4 @@
-using DotNetMastery_coreMVC.Models;
+using DotNetMastery.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 

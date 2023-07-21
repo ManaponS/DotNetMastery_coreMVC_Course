@@ -1,4 +1,4 @@
-namespace DotNetMastery_coreMVC.Models
+namespace DotNetMastery.Models
 {
     public class ErrorViewModel
     {

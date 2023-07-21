@@ -4,7 +4,7 @@
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace DotNetMastery_Web.Migrations
+namespace DotNetMastery.DataAccess.Migrations
 {
     /// <inheritdoc />
     public partial class SeedCatgoryTable : Migration

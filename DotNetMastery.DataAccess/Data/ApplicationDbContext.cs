@@ -1,7 +1,7 @@
-﻿using DotNetMastery_Web.Models;
+﻿using DotNetMastery.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace DotNetMastery_Web.Data
+namespace DotNetMastery.DataAccess.Data
 {
     public class ApplicationDbContext: DbContext
     {

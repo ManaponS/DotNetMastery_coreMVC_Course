@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace DotNetMastery_Web.Migrations
+namespace DotNetMastery.DataAccess.Migrations
 {
     /// <inheritdoc />
     public partial class AddCategoryTable : Migration

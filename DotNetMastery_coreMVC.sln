@@ -5,7 +5,11 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetMastery_Web", "DotNetMastery_coreMVC\DotNetMastery_Web.csproj", "{97A8398E-7FEA-4160-88D6-19D13261DFFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetMastery_RazorProject", "DotNetMastery_RazorProject\DotNetMastery_RazorProject.csproj", "{FA378C09-E876-41FC-9014-0E7680E70286}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetMastery.DataAccess", "DotNetMastery.DataAccess\DotNetMastery.DataAccess.csproj", "{A63A408E-2328-42DE-9115-C3B664ABF467}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetMastery.Models", "DotNetMastery.Models\DotNetMastery.Models.csproj", "{FBC20A5C-E967-4E7F-A581-ADD95B3C2E8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetMastery.Utility", "DotNetMastery.Utility\DotNetMastery.Utility.csproj", "{ABCE5ABD-0D5E-43BB-BC98-AECCADE9146E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +21,18 @@ Global
 		{97A8398E-7FEA-4160-88D6-19D13261DFFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97A8398E-7FEA-4160-88D6-19D13261DFFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97A8398E-7FEA-4160-88D6-19D13261DFFE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FA378C09-E876-41FC-9014-0E7680E70286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA378C09-E876-41FC-9014-0E7680E70286}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FA378C09-E876-41FC-9014-0E7680E70286}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FA378C09-E876-41FC-9014-0E7680E70286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A63A408E-2328-42DE-9115-C3B664ABF467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A63A408E-2328-42DE-9115-C3B664ABF467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A63A408E-2328-42DE-9115-C3B664ABF467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A63A408E-2328-42DE-9115-C3B664ABF467}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC20A5C-E967-4E7F-A581-ADD95B3C2E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC20A5C-E967-4E7F-A581-ADD95B3C2E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC20A5C-E967-4E7F-A581-ADD95B3C2E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC20A5C-E967-4E7F-A581-ADD95B3C2E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABCE5ABD-0D5E-43BB-BC98-AECCADE9146E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABCE5ABD-0D5E-43BB-BC98-AECCADE9146E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABCE5ABD-0D5E-43BB-BC98-AECCADE9146E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABCE5ABD-0D5E-43BB-BC98-AECCADE9146E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
