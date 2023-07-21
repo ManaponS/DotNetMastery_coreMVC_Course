@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetMastery_Web", "DotNetMastery_coreMVC\DotNetMastery_Web.csproj", "{97A8398E-7FEA-4160-88D6-19D13261DFFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetRazor", "DotNetRazor\DotNetRazor.csproj", "{4AADE2C0-E9DD-43CC-AC5E-42D946D1E042}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetMastery_RazorProject", "DotNetMastery_RazorProject\DotNetMastery_RazorProject.csproj", "{FA378C09-E876-41FC-9014-0E7680E70286}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{97A8398E-7FEA-4160-88D6-19D13261DFFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97A8398E-7FEA-4160-88D6-19D13261DFFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97A8398E-7FEA-4160-88D6-19D13261DFFE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4AADE2C0-E9DD-43CC-AC5E-42D946D1E042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4AADE2C0-E9DD-43CC-AC5E-42D946D1E042}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4AADE2C0-E9DD-43CC-AC5E-42D946D1E042}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4AADE2C0-E9DD-43CC-AC5E-42D946D1E042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA378C09-E876-41FC-9014-0E7680E70286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA378C09-E876-41FC-9014-0E7680E70286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA378C09-E876-41FC-9014-0E7680E70286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA378C09-E876-41FC-9014-0E7680E70286}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
