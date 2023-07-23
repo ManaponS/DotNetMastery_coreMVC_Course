@@ -1,8 +1,6 @@
-﻿using DotNetMastery.DataAccess.Data;
+﻿using DotNetMastery.DataAccess.Repository.IRepository;
 using DotNetMastery.Models;
-using DotNetMastery.DataAccess;
 using Microsoft.AspNetCore.Mvc;
-using DotNetMastery.DataAccess.Repository.IRepository;
 
 namespace DotNetMastery_Web.Areas.Admin.Controllers
 {
@@ -14,6 +12,7 @@ namespace DotNetMastery_Web.Areas.Admin.Controllers
         {
             _unitOfWork = unitOfWork;
         }
+
         public IActionResult Index()
         {
             List<Category> objCategoryList = _unitOfWork.Category.GetAll().ToList();
@@ -47,6 +46,7 @@ namespace DotNetMastery_Web.Areas.Admin.Controllers
             {
                 return NotFound();
             }
+
             Category? categoryFromDb = _unitOfWork.Category.Get(u => u.CategoryId == CategoryId);
             //Category? categoryFromDb1 = _db.Categories.FirstOrDefault(u=>u.Id==id);
             //Category? categoryFromDb2 = _db.Categories.Where(u=>u.Id==id).FirstOrDefault();
