@@ -20,7 +20,23 @@ namespace DotNetMastery.DataAccess.Repository
 
         public void Update(Product obj)
         {
-            _db.Products.Update(obj);
+            var objFromDb = _db.Products.FirstOrDefault(u => u.ProductId == obj.ProductId);
+            if (objFromDb != null)
+            {
+                objFromDb.Title = objFromDb.Title;
+                objFromDb.Description = objFromDb.Description;
+                objFromDb.ISBN = objFromDb.ISBN;
+                objFromDb.Author = objFromDb.Author;
+                objFromDb.ListPrice = objFromDb.ListPrice;
+                objFromDb.Price = objFromDb.Price;
+                objFromDb.Price50 = objFromDb.Price50;
+                objFromDb.Price100 = objFromDb.Price100;
+                objFromDb.CategoryId = objFromDb.CategoryId;
+                if (obj.ImageUrl != null)
+                {
+                    objFromDb.ImageUrl = obj.ImageUrl;
+                }
+            }
         }
     }
 }

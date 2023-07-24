@@ -59,13 +59,31 @@ namespace DotNetMastery_Web.Areas.Admin.Controllers
                     string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
                     string productPath = Path.Combine(wwwRootPath, @"images\product");
 
-                    using (var fileStream = new FileStream(Path.Combine(productPath, fileName),FileMode.Create))
+                    if (!string.IsNullOrEmpty(ProductVM.Product.ImageUrl))
+                    {
+                        var oldImgPath = Path.Combine(wwwRootPath, ProductVM.Product.ImageUrl.TrimStart('\\'));
+                        if (System.IO.File.Exists(oldImgPath))
+                        {
+                            System.IO.File.Delete(oldImgPath);
+                        }
+                    }
+
+                    using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
                     {
                         file.CopyTo(fileStream);
                     }
-                    ProductVM.Product.ImageUrl = @"\images\product\" + fileName;         
+                    ProductVM.Product.ImageUrl = @"\images\product\" + fileName;
                 }
-                _unitOfWork.Product.Add(ProductVM.Product);
+
+                if (ProductVM.Product.ProductId == 0)
+                {
+                    _unitOfWork.Product.Add(ProductVM.Product);
+                }
+                else
+                {
+                    _unitOfWork.Product.Update(ProductVM.Product);
+                }
+
                 _unitOfWork.Save();
                 TempData["success"] = "Successfully Create Product";
                 return RedirectToAction("Index");
@@ -78,7 +96,7 @@ namespace DotNetMastery_Web.Areas.Admin.Controllers
                     Text = u.Name,
                     Value = u.CategoryId.ToString(),
                 });
-                return View(ProductVM);
+                return View(productVM);
             }
             
         }
